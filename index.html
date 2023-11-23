@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b4c9bbd754.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b4c9bbd754.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="bg-gray-200 py-4 bg-neutral-100">
+        <article class="container-wrapper mx-auto flex justify-between items-center text-sm">
+            <span class="font-bold uppercase">
+                Logo
+            </span>
+            <nav class="hidden lg:block">
+                <ul class="flex gap-8 uppercase font-bold">
+                    <li class="flex items-center hover:text-teal-500">
+                        <a href="/">Living</a>
+                    </li>
+                    <li class="hover:text-teal-500">
+                        <a href="/">ourdoorss</a>
+                    </li>
+                    <li class="hover:text-teal-500">
+                        <a href="/">Blog</a>
+                    </li>
+                    <li class="hover:text-teal-500">
+                        <a href="/">Activities</a>
+                    </li>
+                    <li class="hover:text-teal-500">
+                        <a href="/">Attractions</a>
+                    </li>
+                    <li class="hover:text-teal-500">
+                        <a href="/">Events</a>
+                    </li>
+                    <li class="hover:text-teal-500">
+                        <a href="/">Parks</a>
+                    </li>
+                    <li class="hover:text-teal-500">
+                        <a href="/">Venues</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex items-center relative">
+                <a href="/search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <div class="content hidden lg:block">
+                   
+                    <div id="burger">
+                    <i></i>
+                    </div>
+                </div>
+                <div class="content block lg:hidden">
+                    <div id="burger-mobile">
+                    <i></i>
+                    </div>
+                </div>
+               <div id="floating-menu" class="bg-white absolute z-10 text-teal-500 top-14 border-teal-500 border border-solid p-4 right-0 font-bold uppercase hidden">
+                    <nav>
+                        <ul class="pr-16">
+                            <li class="my-2">
+                                About
+                            </li>
+                            <li class="my-2">
+                                Gallery
+                            </li>
+                            <li class="my-2">
+                                Services
+                            </li>
+                            <li class="my-2">
+                                Contact
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="mobile-menu" class="fixed inset-0 floating-menu w-full bg-white lg:hidden p-6">
+                    <button id="closeMenu" class="ml-auto block mr-6"><i class="fa-solid fa-xmark scale-150"></i></button>
+                    <nav>
+                        <ul class="flex flex-col uppercase font-bold gap-4">
+                            <li class="flex items-center hover:text-teal-500">
+                                <a href="/">Living</a>
+                            </li>
+                            <li class="hover:text-teal-500">
+                                <a href="/">ourdoorss</a>
+                            </li>
+                            <li class="hover:text-teal-500">
+                                <a href="/">Blog</a>
+                            </li>
+                            <li class="hover:text-teal-500">
+                                <a href="/">Activities</a>
+                            </li>
+                            <li class="hover:text-teal-500">
+                                <a href="/">Attractions</a>
+                            </li>
+                            <li class="hover:text-teal-500">
+                                <a href="/">Events</a>
+                            </li>
+                            <li class="hover:text-teal-500">
+                                <a href="/">Parks</a>
+                            </li>
+                            <li class="hover:text-teal-500">
+                                <a href="/">Venues</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+        </article>
+        
+    </header>
+
+
+    <!-- END OF HEADER -->
+
+    <!-- TOP ITEMS-->
+    <div class="bg-white mb-8 mt-12">
+        <div class="container-wrapper top-items grid  grid-cols-1 md:grid-cols-4 mx-auto gap-1 text-sm">
+            <div class="main-image relative">
+                <img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1502/everglades-swamp-tour_1_1463.jpg?itok=uWxKuHx2&" alt="">
+                <div class="absolute bg-black opacity-30 w-full h-full inset-0"></div>
+                <div class="text-white absolute bottom-0 mb-4 ml-4">
+                    <span class="block bg-teal-500 text-white w-max px-2 py-1 uppercase mb-2">ourdoors</span>
+                    <span class="block text-white">Everglade swamp tour</span>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1502/everglades-swamp-tour_1_1463.jpg?itok=uWxKuHx2&" alt="">
+                <div class="absolute bg-black opacity-30 w-full h-full inset-0"></div>
+                <div class="text-white absolute bottom-0 mb-4 ml-4">
+                    <span class="block bg-teal-500 text-white w-max px-2 py-1 uppercase mb-2">ourdoors</span>
+                    <span class="block text-white">Everglade swamp tour</span>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1502/everglades-swamp-tour_1_1463.jpg?itok=uWxKuHx2&" alt="">
+                <div class="absolute bg-black opacity-30 w-full h-full inset-0"></div>
+                <div class="text-white absolute bottom-0 mb-4 ml-4">
+                    <span class="block bg-teal-500 text-white w-max px-2 py-1 uppercase mb-2">ourdoors</span>
+                    <span class="block text-white">Everglade swamp tour</span>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1502/everglades-swamp-tour_1_1463.jpg?itok=uWxKuHx2&" alt="">
+                <div class="absolute bg-black opacity-30 w-full h-full inset-0"></div>
+                <div class="text-white absolute bottom-0 mb-4 ml-4">
+                    <span class="block bg-teal-500 text-white w-max px-2 py-1 uppercase mb-2">ourdoors</span>
+                    <span class="block text-white">Everglade swamp tour</span>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1502/everglades-swamp-tour_1_1463.jpg?itok=uWxKuHx2&" alt="">
+                <div class="absolute bg-black opacity-30 w-full h-full inset-0"></div>
+                <div class="text-white absolute bottom-0 mb-4 ml-4">
+                    <span class="block bg-teal-500 text-white w-max px-2 py-1 uppercase mb-2">ourdoors</span>
+                    <span class="block text-white">Everglade swamp tour</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- END OF TOP ITEMS -->
+
+    <!-- CATEGORY COLUMNS-->
+
+    <div class="container-wrapper mx-auto">
+        <div class="grid lg:grid-cols-3 gap-4 mb-8">
+            <div class=" gray-margin relative">
+                <h2 class="block-title title-view bg-teal-500 text-white w-max px-2 py-1.5 uppercase mb-3 text-sm">ourdoors</h2>
+                <article class="mb-4">
+                    <img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/field/image/cape_florida_light_ourse.jpg?itok=FiCRKYFz" alt="">
+                    <article class=" mt-2 mb-3">
+                        <div class="text-sm">
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all mt-3 inline-block">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                        <p class="text-sm mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ratione nam reiciendis aliquid error excepturi?</p>
+                    </article>
+                </article>
+                <div class="flex mb-4 text-sm">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+                <div class="flex mb-4 text-sm">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+                <div class="flex mb-4 text-sm">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+                
+            </div>
+        
+            <div class="gray-margin relative">
+                <h2 class="block-title title-view bg-teal-500 text-white w-max px-2 py-1.5 uppercase  mb-3 text-sm">Events</h2>
+                <article>
+                    <img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/field/image/cape_florida_light_ourse.jpg?itok=FiCRKYFz" alt="">
+                    <article class=" mt-2 mb-3">
+                        <div class="text-sm">
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all mt-3 inline-block">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                        <p class="text-sm mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ratione nam reiciendis aliquid error excepturi?</p>
+                    </article>
+                </article>
+                <div class="flex mb-2 text-sm">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+                <div class="flex mb-4 text-sm">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+                <div class="flex mb-4 text-sm">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+                
+            </div>
+            <div class="gray-margin relative">
+                <h2 class="block-title title-view bg-teal-500 text-white w-max px-2 py-1.5 uppercase mb-3 text-sm">Parks</h2>
+                <article>
+                    <img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/field/image/cape_florida_light_ourse.jpg?itok=FiCRKYFz" alt="">
+                    <article class=" mt-2 mb-3">
+                        <div class="text-sm">
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all mt-3 inline-block">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                        <p class="text-sm mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ratione nam reiciendis aliquid error excepturi?</p>
+                    </article>
+                </article>
+                <div class="flex mb-2 text-sm">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+                <div class="flex mb-4 text-sm">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+                <div class="flex mb-4 text-sm">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Palm Beach Gardens Tennis & Pickleball Center</span>
+                        </a>
+                    </article>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!--GALLERY -->
+
+    <div class="bg-white">
+        <div class="container-wrapper mx-auto py-2 mb-8">
+            <div class="flex border-b border-solid border-teal-500 pb-2 mb-8 text-sm">
+                <button class="uppercase text-teal-500 gallery-button" id="gallery">Gallery</button>
+                <span class="text-neutral-500 mx-2">|</span>
+                <button class="uppercase text-neutral-500 gallery-button" id="videos">Videos</button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5 mb-4">
+                <a href=""><img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1046/taste-history-culinary-tours_0_361.jpg?itok=ou1Czkx3&" alt=""></a>
+                <a href=""><img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1590/ah-tah-thi-ki-museum_0_1034.jpg?itok=7eoaJzU6&" alt=""></a>
+                <a href=""><img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1322/antique-car-city-tours_0_3479.png?itok=XAFw9u_L&" alt=""></a>
+                <a href=""><img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1371/silverball-museum_1_3313.jpg?itok=lwZuOupq&" alt=""></a>
+                <a href=""><img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1699/no-vacansea-fishing-charters_0_4693.jpg?itok=AT5cTG_Y&" alt=""></a>
+                <a href=""><img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1502/everglades-swamp-tour_1_1463.jpg?itok=uWxKuHx2&" alt=""></a>
+
+            </div>
+        </div>
+        
+
+    </div>
+    <!-- END OF GALLERY -->
+
+
+    <div class="bg-neutral-100 text-sm pb-12 pt-4">
+        <div class="container-wrapper mx-auto pt-8 pb-8">
+            <h4 class="bg-teal-500 text-white w-max px-2 py-1.5 uppercase mb-6 recommended-button">Recommended</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6">
+                <div class="flex">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+                <div class="flex">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+                <div class="flex">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+    
+                <div class="flex">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+                <div class="flex">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+                <div class="flex">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+                <div class="flex">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+                <div class="flex">
+                    <img src="https://previewthemes.com/kama/sites/default/files/styles/thumbnail/public/articles/post-1.jpg?itok=Py2MTeWx" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Planet Kids Miami</span>
+                        </a>
+                    </article>
+                </div>
+                <div class="flex">
+                    <img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1526/fighting-lady-sportfishing-charters_1_3187.jpg?itok=SsIFhwBC&" alt="" class="thumbnail">
+                    <article class="ml-4">
+                        <div>
+                            <span class="text-teal-500">Venues</span>
+                            <span class="text-neutral-500"> | </span>
+                            <span class="text-neutral-500">Stuart</span>
+                        </div>
+                        <a href="/" class="hover:text-teal-500 transition-all">
+                            <span>Fighting Lady Sportfishing Charters</span>
+                        </a>
+                    </article>
+                </div>
+                
+                
+            </div>
+            <button class="font-bold bg-teal-500 rounded-full w-max text-white mx-auto block mt-10 px-6 py-1.5">LOAD MORE</button>
+           
+
+
+        </div>
+        
+
+
+    </div>
+    <footer class="bg-neutral-800 text-white text-sm px-6 py-8">
+        <div class="container-wrapper mx-auto">
+            <div class="border-b border-solid border-neutral-400 pb-6 mb-6">
+                <span class="uppercase font-bold">Subscribe our newsletter</span>
+            </div>
+            <article class="flex-col md:flex-row flex items-center">
+                <span class="flex-1 mb-4 inline-block md:mb-0">Stay up do date with South Florida!</span>
+                <form class="flex-1">
+                    <input type="text" class="p-2 w-2/3 text-teal-600" placeholder="E-Mail Address">
+                    <button type="submit" class="uppercase bg-teal-500 p-2 -translate-x-1 font-bold">Sign up!</button>
+                </form>
+            </article>
+            <div class="flex mt-6 pt-6 border-t border-solid border-neutral-400">
+                <nav class="flex-1">
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <li class="hover:text-teal-500 footer-link">
+                            <a href="/articles" class="flex items-center">
+                                <i class="fa-solid fa-chevron-right scale-75 mr-2"></i>
+                                <span class="block">Articles</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-teal-500 footer-link">
+                            <a href="/articles" class="flex">
+                                <i class="fa-solid fa-chevron-right scale-75 mr-2"></i>
+                                <span class="block">Travel</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-teal-500 footer-link">
+                            <a href="/articles" class="flex">
+                                <i class="fa-solid fa-chevron-right scale-75 mr-2"></i>
+                                <span class="block">ourdoorss</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-teal-500 footer-link">
+                            <a href="/articles" class="flex">
+                                <i class="fa-solid fa-chevron-right scale-75 mr-2"></i>
+                                <span class="block">Living</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-teal-500 footer-link">
+                            <a href="/articles" class="flex">
+                                <i class="fa-solid fa-chevron-right scale-75 mr-2"></i>
+                                <span class="block">Blog</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-teal-500 footer-link">
+                            <a href="/articles" class="flex">
+                                <i class="fa-solid fa-chevron-right scale-75 mr-2"></i>
+                                <span class="block">Events</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-teal-500 footer-link">
+                            <a href="/articles" class="flex">
+                                <i class="fa-solid fa-chevron-right scale-75 mr-2"></i>
+                                <span class="block">Attractions</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-teal-500 footer-link">
+                            <a href="/articles" class="flex">
+                                <i class="fa-solid fa-chevron-right scale-75 mr-2"></i>
+                                <span class="block">Activities</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-teal-500 footer-link">
+                            <a href="/articles" class="flex">
+                                <i class="fa-solid fa-chevron-right scale-75 mr-2"></i>
+                                <span class="block">Venues</span>
+                            </a>
+                        </li>
+
+                        
+                        
+                    </ul>
+                </nav>
+                <div class="flex-1">
+                    <span>Find Us on Social Media</span>
+                    <div class="flex gap-4 mt-4">
+                        <a href="https://www.facebook.com/southfloridafinds"><i class="fa-brands fa-facebook-f scale-150 hover:text-teal-500"></i></a>
+                        <a href="https://www.instagram.com/soflofinds/"><i class="fa-brands fa-instagram scale-150 hover:text-teal-500"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        
+    </footer>
+    <script>
+      
+
+
+        function toggleStyle() {
+            document.getElementById("burger").classList.toggle("burgeractive");
+            document.getElementById("floating-menu").classList.toggle("hidden");
+
+        }
+        function toggleStyleMobile() {
+            document.getElementById("burger-mobile").classList.toggle("burgeractive-mobile");
+            document.getElementById("mobile-menu").classList.toggle("open");
+        }
+        function toggleGallery(e) {
+            Array.from(document.getElementsByClassName('gallery-button')).forEach((item) => {
+                item.classList.replace('text-teal-500', 'text-neutral-500')
+            })
+            e.target.classList.add('text-teal-500')
+        }
+        
+        function init() {
+            document.getElementById("burger").addEventListener("click", toggleStyle);
+            document.getElementById("burger-mobile").addEventListener("click", toggleStyleMobile);
+            document.getElementById("closeMenu").addEventListener("click", toggleStyleMobile);
+            let activeTab = 'gallery'
+            Array.from(document.getElementsByClassName('gallery-button')).forEach((item) => {
+                item.addEventListener('click', toggleGallery)
+            })
+        }
+        init();
+    </script>
+</body>
+</html>
