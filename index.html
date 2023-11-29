@@ -6,13 +6,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/b4c9bbd754.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b4c9bbd754.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
 <body>
     <!-- HEADER -->
+
     <header class="bg-gray-200 py-4 bg-neutral-100">
-        <article class="container-wrapper mx-auto flex justify-between items-center text-sm">
+        <article class="container-wrapper pl-4 pr-4 mx-auto flex justify-between items-center text-sm">
             <span class="font-bold uppercase">
                 Logo
             </span>
@@ -48,13 +49,13 @@
                 <a href="/search"><i class="fa-solid fa-magnifying-glass"></i></a>
                 <div class="content hidden lg:block">
                    
-                    <div id="burger">
-                    <i></i>
+                    <div id="burger" class="relative cursor-pointer">
+                    <i class="bg-black absolute opacity-100 w-full h-1 right-0 top-1/2"></i>
                     </div>
                 </div>
                 <div class="content block lg:hidden">
-                    <div id="burger-mobile">
-                    <i></i>
+                    <div id="burger-mobile" class="relative cursor-pointer">
+                    <i class="bg-black absolute opacity-100 w-full h-1 right-0 top-1/2"></i>
                     </div>
                 </div>
                <div id="floating-menu" class="bg-white absolute z-10 text-teal-500 top-14 border-teal-500 border border-solid p-4 right-0 font-bold uppercase hidden">
@@ -75,7 +76,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div id="mobile-menu" class="fixed inset-0 floating-menu w-full bg-white lg:hidden p-6">
+                <div id="mobile-menu" class="fixed inset-0 floating-menu w-full bg-white lg:hidden p-6 z-50">
                     <button id="closeMenu" class="ml-auto block mr-6"><i class="fa-solid fa-xmark scale-150"></i></button>
                     <nav>
                         <ul class="flex flex-col uppercase font-bold gap-4">
@@ -107,17 +108,15 @@
                     </nav>
                 </div>
             </div>
-            
         </article>
-        
     </header>
-
 
     <!-- END OF HEADER -->
 
     <!-- TOP ITEMS-->
+
     <div class="bg-white mb-8 mt-12">
-        <div class="container-wrapper top-items grid  grid-cols-1 md:grid-cols-4 mx-auto gap-1 text-sm">
+        <div class="container-wrapper pl-4 pr-4 top-items grid  grid-cols-1 md:grid-cols-4 mx-auto gap-1 text-sm">
             <div class="main-image relative">
                 <img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1502/everglades-swamp-tour_1_1463.jpg?itok=uWxKuHx2&" alt="">
                 <div class="absolute bg-black opacity-30 w-full h-full inset-0"></div>
@@ -159,14 +158,13 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <!-- END OF TOP ITEMS -->
 
     <!-- CATEGORY COLUMNS-->
 
-    <div class="container-wrapper mx-auto">
+    <div class="container-wrapper pl-4 pr-4 mx-auto">
         <div class="grid lg:grid-cols-3 gap-4 mb-8">
             <div class=" gray-margin relative">
                 <h2 class="block-title title-view bg-teal-500 text-white w-max px-2 py-1.5 uppercase mb-3 text-sm">ourdoors</h2>
@@ -223,9 +221,7 @@
                         </a>
                     </article>
                 </div>
-                
             </div>
-        
             <div class="gray-margin relative">
                 <h2 class="block-title title-view bg-teal-500 text-white w-max px-2 py-1.5 uppercase  mb-3 text-sm">Events</h2>
                 <article>
@@ -338,16 +334,16 @@
                         </a>
                     </article>
                 </div>
-                
             </div>
         </div>
-
     </div>
+
+    <!--END OF CATEGORY COLUMNS -->
 
     <!--GALLERY -->
 
     <div class="bg-white">
-        <div class="container-wrapper mx-auto py-2 mb-8">
+        <div class="container-wrapper pl-4 pr-4 mx-auto py-2 mb-8">
             <div class="flex border-b border-solid border-teal-500 pb-2 mb-8 text-sm">
                 <button class="uppercase text-teal-500 gallery-button" id="gallery">Gallery</button>
                 <span class="text-neutral-500 mx-2">|</span>
@@ -360,17 +356,16 @@
                 <a href=""><img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1371/silverball-museum_1_3313.jpg?itok=lwZuOupq&" alt=""></a>
                 <a href=""><img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1699/no-vacansea-fishing-charters_0_4693.jpg?itok=AT5cTG_Y&" alt=""></a>
                 <a href=""><img src="https://www.southfloridafinds.com/sites/sff/files/styles/feature_large/public/finds_media/1502/everglades-swamp-tour_1_1463.jpg?itok=uWxKuHx2&" alt=""></a>
-
             </div>
         </div>
-        
-
     </div>
+
     <!-- END OF GALLERY -->
 
+    <!-- RECOMMENDED -->
 
     <div class="bg-neutral-100 text-sm pb-12 pt-4">
-        <div class="container-wrapper mx-auto pt-8 pb-8">
+        <div class="container-wrapper pl-4 pr-4 mx-auto pt-8 pb-8">
             <h4 class="bg-teal-500 text-white w-max px-2 py-1.5 uppercase mb-6 recommended-button">Recommended</h4>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6">
                 <div class="flex">
@@ -490,21 +485,18 @@
                             <span>Fighting Lady Sportfishing Charters</span>
                         </a>
                     </article>
-                </div>
-                
-                
+                </div>       
             </div>
             <button class="font-bold bg-teal-500 rounded-full w-max text-white mx-auto block mt-10 px-6 py-1.5">LOAD MORE</button>
-           
-
-
         </div>
-        
-
-
     </div>
+
+    <!-- END OF RECOMMENDED -->
+
+    <!-- FOOTER -->
+
     <footer class="bg-neutral-800 text-white text-sm px-6 py-8">
-        <div class="container-wrapper mx-auto">
+        <div class="container-wrapper pl-4 pr-4 mx-auto">
             <div class="border-b border-solid border-neutral-400 pb-6 mb-6">
                 <span class="uppercase font-bold">Subscribe our newsletter</span>
             </div>
@@ -571,10 +563,7 @@
                                 <i class="fa-solid fa-chevron-right scale-75 mr-2"></i>
                                 <span class="block">Venues</span>
                             </a>
-                        </li>
-
-                        
-                        
+                        </li>    
                     </ul>
                 </nav>
                 <div class="flex-1">
@@ -585,42 +574,11 @@
                     </div>
                 </div>
             </div>
-            
         </div>
-        
-        
-        
     </footer>
-    <script>
-      
 
+    <!-- END OF FOOTER-->
 
-        function toggleStyle() {
-            document.getElementById("burger").classList.toggle("burgeractive");
-            document.getElementById("floating-menu").classList.toggle("hidden");
-
-        }
-        function toggleStyleMobile() {
-            document.getElementById("burger-mobile").classList.toggle("burgeractive-mobile");
-            document.getElementById("mobile-menu").classList.toggle("open");
-        }
-        function toggleGallery(e) {
-            Array.from(document.getElementsByClassName('gallery-button')).forEach((item) => {
-                item.classList.replace('text-teal-500', 'text-neutral-500')
-            })
-            e.target.classList.add('text-teal-500')
-        }
-        
-        function init() {
-            document.getElementById("burger").addEventListener("click", toggleStyle);
-            document.getElementById("burger-mobile").addEventListener("click", toggleStyleMobile);
-            document.getElementById("closeMenu").addEventListener("click", toggleStyleMobile);
-            let activeTab = 'gallery'
-            Array.from(document.getElementsByClassName('gallery-button')).forEach((item) => {
-                item.addEventListener('click', toggleGallery)
-            })
-        }
-        init();
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
